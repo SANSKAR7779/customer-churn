@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Churn</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="header-text">
+        <h1>CUSTOMER CHURN PREDICTION</h1>
+    </div>
+        <form action="/" method="POST">
+    <fieldset>
+        <center>
+                <div class="form">
+                    <br><br><label class="font font0" for="Dependents">Dependents:</label>
+                        <select name="Dependents" id="Dependents">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select><br>
+
+                    <br><br><label class="font font1" for="tenure">Tenure:</label>
+                    <input type="number" name="tenure" id="tenure" value="" placeholder="(In Numbers)"><br>
+
+                    <br><br><label class="font font2" for="OnlineSecurity"> Online Security:</label>
+                    <select name="OnlineSecurity" id="OnlineSecurity">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select><br>
+
+                    <br><br><label class="font font3" for="OnlineBackup">Online Backup:</label>
+                    <select name="OnlineBackup" id="OnlineBackup">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select><br>
+
+                    <br><br><label class="font font4" for="DeviceProtection">Device Protection:</label>
+                    <select name="DeviceProtection" id="DeviceProtection">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select><br>
+
+                    <br><br><label class="font font5" for="TechSupport">Tech Support:</label>
+                    <select name="TechSupport" id="TechSupport">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select><br>
+
+                    <br><br><label class="font font6" for="Contract">Contract:</label>
+                    <select name="Contract" id="Contract">
+                        <option value="month-to-month">Month-to-month</option>
+                        <option value="one-year">One year</option>
+                    </select><br>
+
+                    <br><br><label class="font font7" for="PaperlessBilling">Paperless Billing:</label>
+                    <select name="PaperlessBilling" id="PaperlessBilling">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select><br>
+
+                    <br><br><label class="font font8" for="MonthlyCharges">Monthly Charges:</label>
+                    <input type="text" name="MonthlyCharges" id="MonthlyCharges" value="" placeholder="(In Numbers)"><br>
+
+                    <br><br><label class="font font9" for="TotalCharges">Total Charges:</label>
+                    <input type="text" name="TotalCharges" id="TotalCharges" value="" placeholder="(In Numbers)"><br><br>
+                </div>
+                
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn2" name="submit">SUBMIT</button>
+			    </div>
+    </center>
+    </fieldset>
+</form>
+
+<div class="output-1">
+    <center><br>
+        <output> <strong>{{op1}}</strong></output><br><output><strong>{{op2}}</strong></output>
+    </center>
+</div>
+</body>
+</html>
